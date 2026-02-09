@@ -1,0 +1,57 @@
+// Feito utilizando a plataforma dbdiagram
+// https://dbdiagram.io/d/6952ba5839fa3db27bc1015a
+
+Project Fichareido {
+  database_type: 'PostgreSQL'
+  Note: 'Um site para Fichas de RPG'
+}
+
+Table usuarios {
+  id int [pk]
+  nome varchar
+  email varchar
+  senha varchar
+  role varchar
+  data_criacao timestamp
+}
+
+Table modelos_ficha {
+  id int [pk]
+  sistema varchar
+  nome varchar
+  descricao varchar
+  data_criacao timestamp
+  criador_id int [ref: > usuarios.id]
+}
+
+Table campos {
+  id int [pk]
+  nome varchar
+  tipo varchar
+  obrigatorio boolean
+  valor_padrao varchar
+}
+
+Table modelos_campos {
+  modelo_id int [ref: > modelos_ficha.id]
+  campo_id int [ref: > campos.id]
+  
+  indexes {
+    (modelo_id, campo_id) [pk]
+  }
+}
+
+Table ficha {
+  id int [pk]
+  modelo_id int [ref: > modelos_ficha.id]
+  usuario_id int [ref: > usuarios.id]
+  nome_personagem varchar
+  data_criacao timestamp
+}
+
+Table valores {
+  id int [pk]
+  id_campos int [ref: > campos.id]
+  id_ficha int [ref: > ficha.id]
+  valor varchar
+}

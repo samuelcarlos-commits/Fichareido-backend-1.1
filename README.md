@@ -1,2 +1,1 @@
-# Repagina-o_Fichareido
-Uma versão repaginada e melhorada do projeto inicial, com o próposito de servir tanto para versões futuras quanto para 
+Aqui eu estou apenas deixando coisas anotadas para caso eu dessista de tudo :)

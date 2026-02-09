@@ -1,0 +1,26 @@
+Seja bem-vindo ao FICHAREIDO!
+
+Meu site tem uma função simples, e talvez muito familiar 
+a vários jogadores de RPG: centralizar todos os elementos 
+necessários para a criação de modelos de fichas e materiais 
+para campanhas.
+
+Este projeto está sendo desenvolvido como parte do Projeto 
+Integrador do curso técnico em Informática do 3° ano do 
+IFRN – Campus Parelhas. 
+
+Por enquanto, sua principal funcionalidade é justamente 
+facilitar a criação de modelos de fichas, tornando o processo 
+mais acessível e intuitivo.
+
+Como desenvolvedor solo, acredito que, com paciência e tempo, 
+este pequeno site possa crescer e se tornar um grande ponto 
+de encontro para jogadores de RPG mundo afora.
+
+Mais do que isso, meu verdadeiro objetivo é incentivar mais 
+pessoas a descobrirem e viverem a experiência de jogar RPG 
+seja pelo meio que for, essa jornada vale a pena ser vivida.
+
+Não duvide, jogue.
+Não tema, role.
+Não fuja, role iniciativa.

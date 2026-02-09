@@ -1,0 +1,99 @@
+Olá.
+
+Gostaria de iniciar este texto de apresentação esclarecendo 
+que o Diagrama Entidade-Relacionamento (DER) deste projeto 
+foi desenvolvido integralmente com o auxílio da ferramenta 
+online dbdiagram, utilizada para a modelagem e organização do 
+banco de dados proposto.
+
+Em relação à produção de telas de amostra, não foi possível 
+desenvolvê-las inicialmente, pois uma parte significativa do 
+tempo foi dedicada à elaboração e revisão do DER. 
+
+Até o presente momento, o diagrama passou por diversas revisões 
+(atualmente em sua 14ª versão), processo que demandou bastante 
+tempo, mas que resultou em uma estrutura mais consistente e 
+alinhada com os objetivos do projeto.
+
+A proposta apresentada consiste no desenvolvimento de uma 
+ferramenta voltada para um uso específico: 
+a criação e organização de modelos de fichas de RPG. 
+
+Reconheço que se trata de um tema possivelmente incomum, 
+porém a escolha foi motivada pela intenção de explorar uma 
+aplicação prática baseada em experiências pessoais e em 
+necessidades observadas dentro desse contexto.
+
+A concepção do projeto teve como base referências 
+de ferramentas já existentes, utilizadas como inspiração para 
+compreender soluções adotadas e orientar a construção da 
+proposta, sem a intenção de reproduzi-las. 
+
+Entre as principais referências, destacam-se:
+
+https://roll20.net/
+
+https://crisordemparanormal.com/
+
+https://firecast.app/pt_br/
+
+Quanto às tecnologias utilizadas, foram mantidas aquelas 
+definidas na proposta do Projeto Integrador, 
+com ajustes realizados após versões 
+iniciais do desenvolvimento:
+
+Backend: Node.js
+
+Frontend: HTML, CSS e JavaScript, com uso do framework Bootstrap
+
+Banco de dados: PostgreSQL
+
+Como ferramentas de apoio ao desenvolvimento e 
+organização do projeto, foram utilizados o 
+dbdiagram, GitHub, entre outros recursos auxiliares.
+
+Quanto às regras de usuários:
+
+Na concepção inicial do projeto, foram previstos cinco tipos 
+distintos de usuários, cada um com níveis específicos de acesso 
+e interação dentro do sistema. 
+
+Esses perfis incluíam: 
+Convidado (Guest), Usuário, Jogador (Player), 
+Mestre (DM) e Administrador.
+
+Entretanto, durante o processo de revisão e amadurecimento 
+(E ao repensar sobre sua estrutura) do projeto, optei por 
+simplificar essa estrutura, reduzindo o número de perfis 
+para três categorias principais. 
+
+Essa decisão teve como objetivo tornar o sistema mais claro, 
+coeso e viável dentro do escopo do Projeto Integrador, 
+sem comprometer as funcionalidades essenciais.
+
+Os perfis de usuários atualmente definidos são:
+
+Usuário: perfil padrão do sistema, responsável pela criação, 
+edição e gerenciamento de modelos de fichas e fichas de 
+personagens. 
+
+Este perfil engloba as funcionalidades anteriormente atribuídas 
+aos usuários comuns, jogadores e mestres, concentrando as ações 
+de uso direto da ferramenta.
+
+Administrador: perfil com privilégios elevados, responsável 
+pelo gerenciamento de usuários, controle e moderação dos 
+modelos de fichas, além de possíveis ações de manutenção e 
+organização do sistema.
+
+Visitante (Guest): perfil não autenticado, destinado a usuários 
+que acessam o sistema sem realizar login. 
+
+Esse perfil possui acesso limitado, voltado apenas à 
+visualização de informações públicas ou testes básicos da 
+ferramenta, sem possibilidade de salvamento de dados no banco.
+
+A simplificação dos perfis contribui para uma estrutura mais 
+objetiva e facilita tanto a implementação da estrutura proposta 
+quanto a compreensão do sistema, especialmente no contexto 
+acadêmico em que o projeto se encontra.
