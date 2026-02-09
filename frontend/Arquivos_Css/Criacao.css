@@ -1,0 +1,28 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#pagina-ficha {
+  background: white;
+  color: black;
+
+  display: grid;
+  grid-auto-flow: column; /* preenche coluna primeiro */
+  grid-template-rows: repeat(20, auto); /* LIMITE DE LINHAS */
+  gap: 12px;
+
+  min-height: 90vh; /* agura da folha */
+}
+
+.campo-ficha {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 6px;
+  background: #f8f9fa;
+}
+
+.campo-ficha label {
+  font-size: 0.85rem;
+  font-weight: bold;
+}

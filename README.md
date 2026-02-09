@@ -1,1 +1,0 @@
-Aqui eu estou apenas deixando coisas anotadas para caso eu dessista de tudo :)

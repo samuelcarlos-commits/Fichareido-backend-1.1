@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -12,8 +12,11 @@
 
   <body class="bg-dark text-light text-center p-4">
     <section id="Cabecalho_Index">
-      <header id="Botoes_Cabecalho" class="bg-secondary p-3 rounded">
-        <a href="/Front-end/Index.html" class="btn btn-light m-1">Início</a>
+      <header
+        id="Botoes_Cabecalho"
+        class="bg-secondary p-3 rounded text-center"
+      >
+        <a href="/frontend/Index.html" class="btn btn-light m-1">Início</a>
         <a href="Login.html" class="btn btn-light m-1">Login / Cadastrar-se</a>
         <a href="Fichas.html" class="btn btn-light m-1">Fichas</a>
         <a href="Criacao.html" class="btn btn-light m-1">Criação de fichas</a>
@@ -25,7 +28,8 @@
         <div class="col-md-5">
           <div class="card bg-secondary text-light p-4">
             <h2 class="mb-4">Login</h2>
-            <form id="formLogin"> <!-- Aqui -->
+            <form id="formLogin">
+              <!-- Aqui -->
               <div class="mb-3">
                 <label for="emailLogin" class="form-label">Email</label>
                 <input
@@ -56,9 +60,12 @@
         <div class="col-md-5 mt-4 mt-md-0">
           <div class="card bg-secondary text-light p-4">
             <h2 class="mb-4">Cadastrar-se</h2>
-            <form id="formCadastro"> <!-- Aqui -->
+            <form id="formCadastro">
+              <!-- Aqui -->
               <div class="mb-3">
-                <label for="nomeCadastro" class="form-label">Nome</label>
+                <label for="nomeCadastro" class="form-label"
+                  >Nome de Usuário</label
+                >
                 <input
                   type="text"
                   class="form-control"
@@ -95,6 +102,6 @@
         </div>
       </div>
     </main>
-    <script src="/Front-end/JS/login.js"></script>
+    <script src="/frontend/JS/login.js"></script>
   </body>
 </html>

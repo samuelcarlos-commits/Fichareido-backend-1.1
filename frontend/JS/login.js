@@ -10,16 +10,39 @@ form.addEventListener("submit", function (event) {
   console.log("Senha:", senha);
 });
 
-const form1 = document.getElementById("formCadastro");
+const formCadastro = document.getElementById("formCadastro");
 
-form1.addEventListener("submit", function (event) {
+formCadastro.addEventListener("submit", async function (event) {
   event.preventDefault();
 
   const nome = document.getElementById("nomeCadastro").value;
   const email = document.getElementById("emailCadastro").value;
   const senha = document.getElementById("senhaCadastro").value;
 
-  console.log("Nome:", nome);
-  console.log("Email:", email);
-  console.log("Senha:", senha);
+  try {
+    const resposta = await fetch("http://localhost:3000/usuarios", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        nome,
+        email,
+        senha,
+      }),
+    });
+
+    const dados = await resposta.json();
+
+    if (!resposta.ok) {
+      alert(dados.erro || "Erro ao cadastrar usuário");
+      return;
+    }
+
+    alert("Usuário cadastrado com sucesso!");
+    formCadastro.reset();
+  } catch (erro) {
+    console.error(erro);
+    alert("Erro de conexão com o servidor");
+  }
 });
