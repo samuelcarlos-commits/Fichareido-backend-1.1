@@ -10,7 +10,7 @@ app.use(express.json());
 
 // rotas mega importantes para eu não me explodir
 app.get("/", (req, res) => {
-  res.send("Servidor rodando porra");
+  res.send("Servidor rodando caralho");
 });
 
 app.use("/modelos", modelosRoutes);

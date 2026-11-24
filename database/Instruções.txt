@@ -1,0 +1,25 @@
+1. Abreviações
+Os atributos de cada tabela são iniciados com uma abreviação de seu nome para fins de distinção.
+
+usr = tabela usuarios
+cmp = tabela campos
+mdf = tabela modelos_ficha
+mdc = tabela modelos_campos
+fch = tabela ficha
+val = tabela valores
+
+2. Chaves Primárias
+
+tabela usuarios = usr_id
+tabela campos = cmp_id
+tabela modelos_ficha = mdf_id
+tabela modelos_campos = mdc_campo_id, mdc_modelo_id
+tabela ficha = fch_id
+tabela valores = val_id
+
+3. Chaves Estrangeiras
+
+tabela modelos_ficha = mdf_criador_id
+tabela modelos_campos = mdc_campo_id, mdc_modelo_id
+tabela ficha = fch_modelo_id, fch_usuario_id
+tabela valores = val_id_campo, val_id_ficha
